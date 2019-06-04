@@ -2,13 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>PET'S MOBILITY</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+     <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/22/22744.png" type="image/png">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+      <div id="contenedor">
+          <div id="pantalla1" class="pantalla1" >
+              <header>
+               <h1 class="encabezado">Pet's mobility</h1>         
+              </header>
+              <main>
+               <p class="intro">Hola petlover!!! Somos una empresa dedicada al transporte de <br></br> animales, por favor ingresa tu contraseña para continuar</p>
+               <form name="formclave">
+                <input type="password" name="contrasena" id="contrasena_lab" class="cuadroDeTexto" placeholder="Contraseña">
+                <br></br>
+                <span class="iconoUsuario"></span>
+                <button type="button" id="ingreso" class="buttonIngresar">INGRESAR</button>
+                <br></br>
+                <p id="error"></p>
+               </form>
+              </main>
+          </div>
+ 
+          <div id="pantalla2" class="pantalla2 hide">
+               <div id="parte1" class="parte1"> 
+                <h1 class="mensaje">-Especie, raza y nombre de tu mascota</h1>
+                <input type="text" name="mensajepet" id="mensaje_pet" class="cuadroDeTexto1" placeholder="Ingrese datos">  
+               </div>
+               <div id="parte2" class="parte2">
+                <h1 class="desplazamiento">-Meses de tu mascota</h1>
+                <input type="number" name="offsetpet" id="offset_pet" class="cuadroDeTexto2" placeholder="N° de desplazamiento">  
+               </div> 
+ 
+               <h3 class="codificar">Elige una opción</h3>
+                <div class="codificar-decodificar" id="codificar-decodificar">
+                     <button type="button" id="codificar" class="buttonCodificar">CODIFICAR</button>
+                     <button type="button" id="decodificar" class="buttonDecodificar">DECODIFICAR</button> 
+                </div>
+                <button type="reset" id="borrar" class="buttonBorrar"><img src="borrar.png" alt="x" /></button>
+ 
+                <input type="text" name="mensajelisto" id="mensaje_listo" class="cuadroDeTexto3" placeholder="Codigo a usar">
+ 
+ 
+          </div>
+ 
+
+    <footer>Todos los derechos reservados a NORAZUG</footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
