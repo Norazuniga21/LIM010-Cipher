@@ -7,8 +7,16 @@
     cursor: pointer;/* cursor*/
 
 }
+#encabezado{
+    background-image: url("http://images6.fanpop.com/image/photos/41500000/puppy-and-cheetah-greyswan618-41544169-800-491.jpg");
+    height: 550px;
+    background-repeat: no-repeat; 
+    margin: 10px 200px 10px 200px;
+    background-size: cover;
+    padding: 0px;
+}
 #pantalla1{
-    height: 100vh;
+    
     background-image: url(https://previews.123rf.com/images/mousemd/mousemd1602/mousemd160200121/53122766-colores-sin-fisuras-patr%C3%B3n-de-mascotas-en-un-fondo-blanco-ilustraci%C3%B3n-vectorial.jpg);
     background-size: 100%;
     }
@@ -46,10 +54,10 @@
     color: #f60000;
 }
 .parte1{
-    width: 500px;
+    width: 60%;
 }
 .parte2{
-    margin-left: 500px;
+    width: 40%;
 }
 .cuadroDeTexto1{
     border-radius: 25px;
@@ -77,25 +85,19 @@
     background-size: 100%;
     height: 100vh;/* para cuadrar imagen a tamaño pantalla*/
 }   
-.encabezado{
-    color: #4abdac;
-    font-size: 150px;
-    font-weight: 1000;
-    margin: 50px 0 30px 0;
-}
 hr{
     height: 10px;
     background-color: rgb(9, 97, 100);
 }
 #contenedor{
-	height: 100vh;
+	margin: auto;
 }
 .intro{
-    margin: 90px 0 90px 0;
+    margin: 20px 0 20px 0;
     display: block;
     color: grey;
     font-weight: 700;
-    font-size: 30;
+    font-size: 30px;
 }
 
 .buttonCodificar{
