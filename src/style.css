@@ -5,20 +5,32 @@
 	text-align: center;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;/* cursor*/
-
+   
 }
 #encabezado{
-    background-image: url("http://images6.fanpop.com/image/photos/41500000/puppy-and-cheetah-greyswan618-41544169-800-491.jpg");
-    height: 550px;
-    background-repeat: no-repeat; 
+    background-image: url(http://infoblancosobrenegro.com/media/W1siZiIsIm5vdGljaWFzLzIzMTUxL2ZvdG8tNTU0MC5qcGVnIl1d/perros-y-gatos.jpg?sha=aedd8f72d1365573);
+    height: 270px;
+    /* width: 00px; */
+    background-repeat: no-repeat;
     margin: 10px 200px 10px 200px;
-    background-size: cover;
     padding: 0px;
+    background-size: inherit;
+    background-position-x: center;
+    background-position-y: center;
+}
+.rotar{
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    height: 20px;
+    width: 25px;
+    text-align: unset;
+    margin-left: 770px;
+    font-size: 52px;
 }
 #pantalla1{
     
-    background-image: url(https://previews.123rf.com/images/mousemd/mousemd1602/mousemd160200121/53122766-colores-sin-fisuras-patr%C3%B3n-de-mascotas-en-un-fondo-blanco-ilustraci%C3%B3n-vectorial.jpg);
-    background-size: 100%;
     }
 .hide {
         display: none;
@@ -43,11 +55,9 @@
     border-radius: 25px;
     outline: none;
     display: block;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 30px;
     color: #ffffff;
+    margin: 30px 0px 30px 550px;
 }
 #error{
     font-size: 20px;
@@ -76,14 +86,12 @@
     border: none;
     background-color: #e3e4db;
     outline: none;
-    margin: 0px;
     font-size: 20px;
+    margin-top: 40px;
 }
 
 #pantalla2{
-    background-image: url(https://previews.123rf.com/images/mousemd/mousemd1602/mousemd160200121/53122766-colores-sin-fisuras-patr%C3%B3n-de-mascotas-en-un-fondo-blanco-ilustraci%C3%B3n-vectorial.jpg);
     background-size: 100%;
-    height: 100vh;/* para cuadrar imagen a tamaño pantalla*/
 }   
 hr{
     height: 10px;
@@ -97,7 +105,7 @@ hr{
     display: block;
     color: grey;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 21px;
 }
 
 .buttonCodificar{
@@ -111,7 +119,7 @@ hr{
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
 }
 .buttonDecodificar{
@@ -125,27 +133,47 @@ hr{
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
 }
 .buttonBorrar {
-    background-size: 0%;
-    padding: 0%; 
+    height: 50px;
+    width: 180px;
+    border: none;
+    background-color: #4abdac;
+    border-radius: 25px;
+    outline: none;
+    display: block;
+    font-size: 30px;
+    color: #ffffff; 
+    margin: 20px 0px 20px 550px;
  }
 .cuadroDeTexto3{
     border-radius: 25px;
-    height: 100px;
+    height: 60px;
     width: 500px;
     border: none;
     background-color: #e6cd44;
     outline: none;
-    margin: 0px;
+    margin: 0px 0px 50px 0px;
     font-size: 20px;
 }
 .iconoUsuario{
     background-image: url('https://img.icons8.com/android/420/user.png');
     width: 150%;
 }
+.bloquearriba{
+    display: -webkit-inline-box;
+    margin: 20px 0px;
+}
+.codificar-decodificar{
+    display: inline-flex;
+}
+.desplazamiento{
+    font-size: 30px;
+
+}
 footer{
     font-weight: 200;
+    margin: 5px 0px 0px 0px;
 }

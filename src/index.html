@@ -9,7 +9,9 @@
   </head>
   <body>
       <header>
-          <div id="encabezado"> </div>         
+          <div id="encabezado">
+           <h1 class="rotar">PET'S MOBILITY</h1>  
+          </div>         
       </header>
       <main>
         <div id="contenedor">
@@ -26,6 +28,7 @@
           </div>
  
           <div id="pantalla2" class="pantalla2 hide">
+             <div class="bloquearriba">
                <div id="parte1" class="parte1"> 
                 <h1 class="mensaje">-Especie, raza y nombre de tu mascota</h1>
                 <input type="text" name="mensajepet" id="mensaje_pet" class="cuadroDeTexto1" placeholder="Ingrese datos">  
@@ -34,15 +37,18 @@
                 <h1 class="desplazamiento">-Meses de tu mascota</h1>
                 <input type="number" name="offsetpet" id="offset_pet" class="cuadroDeTexto2" placeholder="N° de desplazamiento">  
                </div> 
- 
-               <h3 class="codificar">Elige una opción</h3>
+               </div>
+
                 <div class="codificar-decodificar" id="codificar-decodificar">
                      <button type="button" id="codificar" class="buttonCodificar">CODIFICAR</button>
                      <button type="button" id="decodificar" class="buttonDecodificar">DECODIFICAR</button> 
                 </div>
-                <button type="reset" id="borrar" class="buttonBorrar"><img src="borrar.png" alt="x" /></button>
+
+                <button type="reset" id="borrar" class="buttonBorrar">LIMPIAR</button>
  
                 <input type="text" name="mensajelisto" id="mensaje_listo" class="cuadroDeTexto3" placeholder="Codigo a usar">
+                <br></br>
+                <p id="mensaje final"></p>
  
  
           </div>
