@@ -13,8 +13,8 @@ Pet’s Mobility soluciona este gran problema ya que brinda el servicio de movil
 
 ### Prototipo en papel:
 
-- (https://drive.google.com/file/d/1tSge9QpiMf8vGErrf7QdRZvcDg58tmDH/view?usp=sharing)
-- (https://drive.google.com/file/d/1HtwzMGCirtEmp2mzth1reU81Vp1SKYgT/view?usp=sharing)
+![image](prototipopapel1.png)
+![image](prototipopapel2.png)
 
 ### Feedback
 
@@ -23,7 +23,5 @@ Pet’s Mobility soluciona este gran problema ya que brinda el servicio de movil
 
 ### Protipo en BALSAMIQ
 
-- (https://drive.google.com/file/d/1opmpP8NuuAfbiSBN7v--1qilEV6H9Ry4/view?usp=sharing
-)
-- (https://drive.google.com/file/d/19vZyDEEgXJ4AhayCxft-bhhZGFcMbN9t/view?usp=sharing
-)
+-![image](balsamiq1.png)
+-![image](balsamiq2.png)

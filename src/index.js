@@ -4,8 +4,8 @@ let password = 0;
    if(password<=3){
     const contrasena = document.getElementById("contrasena_lab").value;
     if (contrasena == "LABORATORIA") {
-      document.getElementById("pantalla1").classList.add('hide');
-      document.getElementById("pantalla2").classList.remove('hide');
+      document.getElementById("pantalla1").classList.add("hide");
+      document.getElementById("pantalla2").classList.remove("hide");
     }
     else{
       document.getElementById("error").innerHTML="Contraseña incorrecta, intente de nuevo";
