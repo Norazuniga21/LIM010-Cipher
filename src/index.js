@@ -18,29 +18,25 @@ let password = 0;
  );
 
 /*variables generales*/
-const msj = document.getElementById("mensaje_pet");
-const offset= document.getElementById("offset_pet");
+
 
 const msjCodificar = document.getElementById("btnCodificar");
-btnCodificar.addEventListener("click", () => {
-  const msjCod = msj.value;
-  const off = offset.value;
-  document.getElementById("mensajeCheck").innerHTML = window.cipher.encode(msj,offset);
+msjCodificar.addEventListener("click", () => {
+  const msj = document.getElementById("mensaje_pet").value;
+  const offset= document.getElementById("offset_pet").value;
+  document.getElementById("mensajeCheck").innerHTML = cipher.encode(offset,msj);
 });  
 
 const msjDecodificar = document.getElementById("btnDecodificar");
-btnDecodificar.addEventListener("click",()=>{
-  let msj = document.getElementById("mensaje_pet").value;
-  let offset= document.getElementById("offset_pet").value;
-  document.getElementById("mensajeCheck").innerHTML = window.cipher.decode(msj,offset);
+msjDecodificar.addEventListener("click",()=>{
+  const msj = document.getElementById("mensaje_pet").value;
+  const offset= document.getElementById("offset_pet").value;
+  document.getElementById("mensajeCheck").innerHTML = cipher.decode(offset,msj);
 });  
 
-/*let borrar = document.getElementById("borrar");
+let borrar = document.getElementById("borrar");
 borrar.addEventListener("click",()=>{
-  let mensaje_pet = 
-  
-  for(let i = 0; i < td.length; i++){
-    borrar[i].innerHTML = ''
-  }
-});  */
-
+  document.getElementById("mensaje_pet").value="";
+  document.getElementById("offset_pet").value="";
+  document.getElementById("mensajeCheck").innerHTML="";
+}); 

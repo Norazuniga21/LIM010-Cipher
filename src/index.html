@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>PET'S MOBILITY</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-     <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/22/22744.png" type="image/png">
-  </head>
-  <body>
-      <header>
-          <div id="encabezado">
-           <h1 class="rotar">PET'S MOBILITY</h1>  
-          </div>         
-      </header>
-      <main>
-        <div id="contenedor">
-          <div id="pantalla1" class="pantalla1" >
-               <p class="intro">Hola petlover!!! Somos una empresa dedicada al transporte de <br></br> animales, por favor ingresa tu contraseña para continuar</p>
-               <form name="formclave">
-                <input type="password" name="contrasena" id="contrasena_lab" class="cuadroDeTexto" placeholder="Contraseña">
-                <br></br>
-                <spahn class="iconoUsuario"></span>
-                <button type="button" id="ingreso" class="buttonIngresar">INGRESAR</button>
-                <p id="error"></p>
-               </form>
+
+<head>
+  <meta charset="utf-8">
+  <title>PET'S MOBILITY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/22/22744.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div id="encabezado">
+      <h1 class="rotar">PET'S MOBILITY</h1>
+    </div>
+  </header>
+  <main>
+    <div id="contenedor">
+      <div id="pantalla1" class="pantalla1">
+        <p class="intro">Hola petlover!!! Somos una empresa dedicada al transporte de <br></br> animales, por favor
+          ingresa tu contraseña para continuar</p>
+        <form name="formclave">
+          <input type="password" name="contrasena" id="contrasena_lab" class="cuadroDeTexto" placeholder="Contraseña">
+          <br></br>
+          <span id="iconpass"><i class="fas fa-lock"></i></span>
+          <button type="button" id="ingreso" class="buttonIngresar">INGRESAR</button>
+          <p id="error"></p>
+        </form>
+      </div>
+
+      <div id="pantalla2" class="pantalla2 hide">
+        <div class="bloquearriba">
+          <div id="parte1" class="parte1">
+            <h1 class="mensaje">-Especie, raza y nombre de tu mascota</h1>
+            <input type="text" name="mensajepet" id="mensaje_pet" class="cuadroDeTexto1" placeholder="Ingrese datos">
           </div>
- 
-          <div id="pantalla2" class="pantalla2 hide">
-             <div class="bloquearriba">
-               <div id="parte1" class="parte1"> 
-                <h1 class="mensaje">-Especie, raza y nombre de tu mascota</h1>
-                <input type="text" name="mensajepet" id="mensaje_pet" class="cuadroDeTexto1" placeholder="Ingrese datos">  
-               </div>
-               <div id="parte2" class="parte2">
-                <h1 class="desplazamiento">-Meses de tu mascota</h1>
-                <input type="number" name="offsetpet" id="offset_pet" class="cuadroDeTexto2" placeholder="N° de desplazamiento">  
-               </div> 
-               </div>
-
-                <div class="codificar-decodificar" id="codificar-decodificar">
-                     <button type="button" id="btnCodificar" class="buttonCodificar">CODIFICAR</button>
-                     <button type="button" id="btnDecodificar" class="buttonDecodificar">DECODIFICAR</button> 
-                </div>
-
-                <button type="reset" id="borrar" class="buttonBorrar">LIMPIAR</button>
- 
-                <p id="mensajeCheck"></p>
-                <br></br>
-                <p id="mensaje final"></p>
- 
- 
+          <div id="parte2" class="parte2">
+            <h1 class="desplazamiento">-Meses de tu mascota</h1>
+            <input type="number" name="offsetpet" id="offset_pet" class="cuadroDeTexto2" placeholder="N° de desplazamiento">
           </div>
-        </main>
+        </div>
 
-    <footer>Todos los derechos reservados a NORAZUG</footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+        <div class="codificar-decodificar" id="codificar-decodificar">
+          <button type="button" id="btnCodificar" class="buttonCodificar">CODIFICAR</button>
+          <button type="button" id="btnDecodificar" class="buttonDecodificar">DECODIFICAR</button>
+          <button type="reset" id="borrar" class="buttonBorrar">LIMPIAR</button>
+        </div>
+
+                     
+        <p id="mensajeCheck"></p>
+        <br></br>
+        <p id="mensaje final"></p>
+
+
+      </div>
+  </main>
+
+  <footer>Todos los derechos reservados a NORAZUG</footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/50dfb794e4.js"></script>
+</body>
+
 </html>

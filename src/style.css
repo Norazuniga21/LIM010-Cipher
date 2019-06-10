@@ -146,7 +146,7 @@ hr{
     display: block;
     font-size: 30px;
     color: #ffffff; 
-    margin: 20px 0px 20px 550px;
+    margin: 20px 0px 20px 630px;
  }
 .cuadroDeTexto3{
     border-radius: 25px;
@@ -158,16 +158,12 @@ hr{
     margin: 0px 0px 50px 0px;
     font-size: 20px;
 }
-.iconoUsuario{
-    background-image: url('https://img.icons8.com/android/420/user.png');
-    width: 150%;
-}
 .bloquearriba{
     display: -webkit-inline-box;
     margin: 20px 0px;
 }
 .codificar-decodificar{
-    display: inline-flex;
+    
 }
 .desplazamiento{
     font-size: 30px;
@@ -176,4 +172,14 @@ hr{
 footer{
     font-weight: 200;
     margin: 0px 0px 0px 0px;
+}
+#mensajeCheck{
+    font-size: 40px;
+}
+#iconpass{
+    position: absolute;
+    /* float: left; */
+    top: 400px;
+    right: 835px;
+    font-size: 40px;
 }
