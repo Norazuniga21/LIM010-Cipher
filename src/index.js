@@ -16,27 +16,25 @@ let password = 0;
         document.getElementById("ingreso").disabled = true;
       }}}}
  );
-
 /*variables generales*/
-
-
 const msjCodificar = document.getElementById("btnCodificar");
 msjCodificar.addEventListener("click", () => {
   const msj = document.getElementById("mensaje_pet").value;
   const offset= document.getElementById("offset_pet").value;
-  document.getElementById("mensajeCheck").innerHTML = cipher.encode(offset,msj);
+  document.getElementById("mensajeCheck").value = cipher.encode(offset,msj);
+  document.getElementById("mensajeFinal").innerHTML="Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada";
 });  
-
 const msjDecodificar = document.getElementById("btnDecodificar");
 msjDecodificar.addEventListener("click",()=>{
   const msj = document.getElementById("mensaje_pet").value;
   const offset= document.getElementById("offset_pet").value;
-  document.getElementById("mensajeCheck").innerHTML = cipher.decode(offset,msj);
+  document.getElementById("mensajeCheck").value = cipher.decode(offset,msj);
+  document.getElementById("mensajeFinal").innerHTML="Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada";
 });  
-
 let borrar = document.getElementById("borrar");
 borrar.addEventListener("click",()=>{
   document.getElementById("mensaje_pet").value="";
   document.getElementById("offset_pet").value="";
-  document.getElementById("mensajeCheck").innerHTML="";
+  document.getElementById("mensajeCheck").value="";
+  document.getElementById("mensajeFinal").innerHTML="";
 }); 
