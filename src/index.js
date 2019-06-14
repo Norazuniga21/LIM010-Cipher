@@ -45,4 +45,6 @@ let volver = document.getElementById("volver");
 volver.addEventListener("click",()=>{
   document.getElementById("pantalla1").classList.remove("hide");
   document.getElementById("pantalla2").classList.add("hide");
+  document.getElementById("contrasena_lab").value="";
+  document.getElementById("error").innerHTML="";
 });
