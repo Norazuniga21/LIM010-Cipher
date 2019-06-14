@@ -8,10 +8,10 @@ let password = 0;
       document.getElementById("pantalla2").classList.remove("hide");
     }
     else{
-      document.getElementById("error").innerHTML="Contraseña incorrecta, intente de nuevo";
+      document.getElementById("error").innerHTML=`Contraseña incorrecta, intente de nuevo <i class="fas fa-exclamation-circle"></i>` ;
       password=password + 1;
       if(password>2){
-        document.getElementById("error").innerHTML="Numero de intentos excedidos, regrese en 6 horas";
+        document.getElementById("error").innerHTML=`Numero de intentos excedidos, regrese en 6 horas <i class="fas fa-exclamation-circle"></i>`;
         document.getElementById("contrasena_lab").disabled = true;
         document.getElementById("ingreso").disabled = true;
       }}}}
@@ -22,14 +22,14 @@ msjCodificar.addEventListener("click", () => {
   const msj = document.getElementById("mensaje_pet").value;
   const offset= document.getElementById("offset_pet").value;
   document.getElementById("mensajeCheck").value = cipher.encode(offset,msj);
-  document.getElementById("mensajeFinal").innerHTML="Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada";
+  document.getElementById("mensajeFinal").innerHTML=`Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada <i class="fas fa-paw"></i>`;
 });  
 const msjDecodificar = document.getElementById("btnDecodificar");
 msjDecodificar.addEventListener("click",()=>{
   const msj = document.getElementById("mensaje_pet").value;
   const offset= document.getElementById("offset_pet").value;
   document.getElementById("mensajeCheck").value = cipher.decode(offset,msj);
-  document.getElementById("mensajeFinal").innerHTML="Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada";
+  document.getElementById("mensajeFinal").innerHTML=`Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada <i class="fas fa-paw"></i>`;
 });  
 
 /*Para borrar todo*/

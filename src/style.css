@@ -46,6 +46,15 @@ body{
 .hide {
         display: none;
 }  
+#form{
+    background-color: #bdb8bf;
+    height: 343px;
+    width: 927px;
+    display: inline-block;
+    /* background: 325px; */
+    background-size: 250px;
+    border-radius: 23px;
+}
 .cuadroDeTexto{
     border-radius: 25px;
     height: 50px;
@@ -130,7 +139,7 @@ hr{
     margin: 20px 0 20px 0;
     display: block;
     position: absolute;
-    left: 224px;
+    left: 249px;
     top: 318px;
     color: #1d0931;
     font-weight: 700;
@@ -259,5 +268,5 @@ footer{
     position: absolute;
     right: 312px;
     top: 592px;
-}   
+}  
 
