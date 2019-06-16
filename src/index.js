@@ -10,6 +10,7 @@ let password = 0;
     else{
       document.getElementById("error").innerHTML=`Contraseña incorrecta, intente de nuevo <i class="fas fa-exclamation-circle"></i>` ;
       password=password + 1;
+      document.getElementById("contrasena_lab").value="";  
       if(password>2){
         document.getElementById("error").innerHTML=`Numero de intentos excedidos, regrese en 6 horas <i class="fas fa-exclamation-circle"></i>`;
         document.getElementById("contrasena_lab").disabled = true;
