@@ -8,11 +8,12 @@ let password = 0;
       document.getElementById("pantalla2").classList.remove("hide");
     }
     else{
-      document.getElementById("error").innerHTML=`Contraseña incorrecta, intente de nuevo <i class="fas fa-exclamation-circle"></i>` ;
+      document.getElementById("error1").classList.remove("hide");
       password=password + 1;
       document.getElementById("contrasena_lab").value="";  
       if(password>2){
-        document.getElementById("error").innerHTML=`Numero de intentos excedidos, regrese en 6 horas <i class="fas fa-exclamation-circle"></i>`;
+        document.getElementById("error1").classList.add("hide");
+        document.getElementById("error2").classList.remove("hide");
         document.getElementById("contrasena_lab").disabled = true;
         document.getElementById("ingreso").disabled = true;
       }}}}
@@ -23,14 +24,14 @@ msjCodificar.addEventListener("click", () => {
   const msj = document.getElementById("mensaje_pet").value;
   const offset= document.getElementById("offset_pet").value;
   document.getElementById("mensajeCheck").value = cipher.encode(offset,msj);
-  document.getElementById("mensajeFinal").innerHTML=`Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada <i class="fas fa-paw"></i>`;
+  document.getElementById("mensajeFinal").classList.remove("hide");
 });  
 const msjDecodificar = document.getElementById("btnDecodificar");
 msjDecodificar.addEventListener("click",()=>{
   const msj = document.getElementById("mensaje_pet").value;
   const offset= document.getElementById("offset_pet").value;
   document.getElementById("mensajeCheck").value = cipher.decode(offset,msj);
-  document.getElementById("mensajeFinal").innerHTML=`Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada <i class="fas fa-paw"></i>`;
+  document.getElementById("mensajeFinal").classList.remove("hide");
 });  
 
 /*Para borrar todo*/
@@ -39,7 +40,7 @@ borrar.addEventListener("click",()=>{
   document.getElementById("mensaje_pet").value="";
   document.getElementById("offset_pet").value="";
   document.getElementById("mensajeCheck").value="";
-  document.getElementById("mensajeFinal").innerHTML="";
+  document.getElementById("mensajeFinal").classList.add("hide");  
 }); 
 /*Para volver a pantalla inicial */
 let volver = document.getElementById("volver");

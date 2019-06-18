@@ -9,9 +9,14 @@
     display: none;
 } 
 body{
-    background-image: url("https://i0.wp.com/www.veterinariacastro.es/wp-content/uploads/2013/08/fondo-huellas.jpg");
+    background-image: url(https://i0.wp.com/www.veterinariacastro.es/wp-content/uploads/2013/08/fondo-huellas.jpg);
     background-size: cover;
-    display: block;
+    box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 header{
     display: block
@@ -43,10 +48,8 @@ header{
     display: inline-block;
 }
 main{
-    display: block;
-}
-#contenedor{
-	margin: auto;
+    width:960px; 
+    margin:0 auto;
 }
 #pantalla1{
     font-family: 'Happy Monkey', cursive;
@@ -84,17 +87,7 @@ main{
     font-size: 30px;
 }
 .cuadroDeTexto:hover{
-    border-radius: 25px;
-    height: 50px;
-    width: 300px;
-    border: none;
     background-color: #babbb2;
-    position: relative;
-    display: flex;
-    top: 164px;
-    left: 340px;
-    outline: transparent;
-    font-size: 30px;
 }
 #iconpass{
     position: relative;
@@ -117,20 +110,16 @@ main{
     position: relative;
 }
 .buttonIngresar:hover{
-    height: 50px;
-    width: 180px;
-    border: none;
     background-color: #2d635b;
-    border-radius: 25px;
-    outline: none;
-    display: flow-root;
-    font-size: 30px;
-    color: #ffffff;
-    left: 380px;
-    top: 148px;
-    position: relative;
 }
-#error{
+#error1{
+    font-size: 20px;
+    color: #f60000;
+    position: relative;
+    top: 62px;
+    left: 0px;
+}
+#error2{
     font-size: 20px;
     color: #f60000;
     position: relative;
@@ -147,6 +136,8 @@ main{
 }
 .parte1{
     width: 60%;
+    margin: 0px 0px 0px 100px;
+    position: relative;
 }
 .mensaje{
     font-size: 24px;
@@ -169,20 +160,13 @@ main{
     right: 78px;
 }
 .cuadroDeTexto1:hover{
-    border-radius: 25px;
-    height: 50px;
-    width: 355px;
-    border: none;
     background-color: #babbb2;
-    outline: none;
-    font-size: 20px;
-    position: relative;
-    display: block;
-    top: 25px;
-    right: 78px;
 }
 .parte2{
     width: 40%;
+    margin: 0px 100px 0px 0px;
+    position: relative;
+    right: 166px;
 }
 .desplazamiento{
     font-size: 24px;
@@ -204,17 +188,7 @@ main{
     top: 25px;
 }
 .cuadroDeTexto2:hover{
-    border-radius: 25px;
-    height: 50px;
-    width: 355px;
-    border: none;
     background-color: #babbb2;
-    outline: none;
-    font-size: 20px;
-    position: relative;
-    left: 78px;
-    display: block;
-    top: 25px;
 }  
 #btn-group{
     display: inline;
@@ -239,22 +213,7 @@ main{
     left: 59px;
 }
 .buttonCodificar:hover{
-    height: 50px;
-    width: 180px;
-    border: none;
     background-color: #2d635b;
-    border-radius: 25px;
-    outline: none;
-    display: block;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 20px;
-    color: #ffffff;
-    position: relative;
-    display: inline;
-    top: 26px;
-    right: 75px;
 }
 .buttonDecodificar{
     height: 50px;
@@ -275,22 +234,7 @@ main{
     left: 59px;
 }
 .buttonDecodificar:hover{
-    height: 50px;
-    width: 180px;
-    border: none;
     background-color: #2d635b;
-    border-radius: 25px;
-    outline: none;
-    display: block;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 20px;
-    color: #ffffff;
-    position: relative;
-    display: inline;
-    top: 26px;
-    left: 75px;
 }
 #borrar{
     right: 410px;
@@ -347,9 +291,8 @@ hr{
     background-color: rgb(247, 40, 3);
 }
 footer{
-    margin: 0px 50px 10px 40px;
     position: relative;
-    left: 36px;
+    left: 0px;
     top: 200px;
     font-size: 21px;
-}
+} 

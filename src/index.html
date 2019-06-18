@@ -9,16 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=Faster+One|Permanent+Marker&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/22/22744.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div id="encabezado">
-      <h1 class="rotar">PET'S MOBILITY</h1>
+     <h1 class="rotar">PET'S MOBILITY </h1>
     </div>
   </header>
   <main>
-    <div id="contenedor">
       <div id="pantalla1" class="pantalla1">
         <p class="intro">Hola petlover!!! Somos una empresa dedicada al transporte de <br> animales, por favor ingresa tu contraseña para continuar</p>
         <form name="formclave" id="form">
@@ -26,7 +26,9 @@
           <br>
           <span id="iconpass"><i class="fas fa-lock"></i></span>
           <button type="button" id="ingreso" class="buttonIngresar">INGRESAR</button>
-          <p id="error"></p>
+          <div id="error1" class="error1 hide">Contraseña incorrecta, intente de nuevo <i class="fas fa-exclamation-circle"></i>`</div>
+          <div id="error2" class="error2 hide">Numero de intentos excedidos, regrese en 6 horas <i class="fas fa-exclamation-circle"></i></div>
+          
         </form>
       </div>
       <div id="pantalla2" class="pantalla2 hide">
@@ -48,13 +50,11 @@
         </div>                  
         <input type="textarea" id="mensajeCheck">
         <br>
-        <p id="mensajeFinal">
-        </p>
+        <p id="mensajeFinal" class="mensajeFinal hide">Proceso terminado, ahora utiliza el codigo para verificar la movilidad enviada <i class="fas fa-paw"></i>`</p>
       </div>
-    </div>
   </main>
 
-  <footer>Todos los derechos reservados a NORAZUG</footer>
+  <footer>🐾Todos los derechos reservados a NORAZUG 🐾</footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
   <script src="https://kit.fontawesome.com/50dfb794e4.js"></script>

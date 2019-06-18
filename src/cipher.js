@@ -13,6 +13,11 @@ window.cipher = {
         let textoChar = (string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
         mensajeCifrado += String.fromCharCode(textoChar);
       }
+      else if (string.charCodeAt(i) >=48 && string.charCodeAt(i)<=57){
+        let textoChar = (string.charCodeAt(i) - 48 + parseInt(offset)) % 10 + 48;
+        mensajeCifrado += String.fromCharCode(textoChar);
+      }
+
       else {
         mensajeCifrado += caracter;   /*formar la cadena cifrada*/
       }
@@ -30,6 +35,10 @@ window.cipher = {
       }
       else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
         let textoChar = (string.charCodeAt(i) - 45 - parseInt(offset)) % 26 + 97;
+        mensajeDecifrado += String.fromCharCode(textoChar);
+      }
+      else if (string.charCodeAt(i) >=48 && string.charCodeAt(i)<=57){
+        let textoChar = (string.charCodeAt(i) - 8 - parseInt(offset)) % 10 + 48;
         mensajeDecifrado += String.fromCharCode(textoChar);
       }
       else {
